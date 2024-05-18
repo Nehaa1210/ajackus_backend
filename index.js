@@ -13,7 +13,7 @@ app.use("/users", userRouter);
 
 
 
-app.listen(8080, async() => {
+app.listen(8000, async() => {
     try{
         await connection;
         console.log("database connected")
