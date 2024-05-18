@@ -28,6 +28,7 @@ userRouter.post("/add", async(req,res)=>{
 
 userRouter.patch("/update/:userID", async(req,res) => {
     const {userID} = req.params
+    console.log(userID)
     try{
         
             let data = await UserModel.findByIdAndUpdate({_id:userID},req.body) 
