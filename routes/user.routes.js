@@ -18,8 +18,8 @@ userRouter.post("/add", async(req,res)=>{
 
  userRouter.get("/", async(req,res) => {
     try{
-        const games=await GameModel.find()
-          res.status(200).send(games)
+        const user=await UserModel.find()
+          res.status(200).send(user)
     }
     catch(err){
         res.status(400).send({"error":err})
